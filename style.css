@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EEF1F6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #407C87;
+}
+
+.stats {
+    font-size: 18px;
+    color: #A5DBDD;
+}
+
+.add-task {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.add-task input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.add-task input[type="text"]:focus {
+    outline: none;
+}
+
+#add-btn {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #407C87;
+    color: #EEF1F6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background-color: #D3E1E2;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #D3E1E2;
+    border-radius: 5px;
+}
+
+li.completed {
+    background-color: #A5DBDD;
+}
+
+li span {
+    font-size: 18px;
+    color: #407C87;
+    margin-bottom: 10px;
+}
+
+li button {
+    padding: 5px;
+    font-size: 18px;
+    background-color: #407C87;
+    color: #EEF1F6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+li button:hover {
+    background-color: #D3E1E2;
+}
+
+h6{
+    font-family: 'Courier New', Courier, monospace;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .header h1 {
+        font-size: 24px;
+    }
+    .stats {
+        font-size: 14px;
+    }
+    .add-task input[type="text"] {
+        font-size: 16px;
+    }
+    #add-btn {
+        font-size: 16px;
+    }
+    li span {
+        font-size: 16px;
+    }
+    li button {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Tasks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Daily Tasks</h1>
+            <div class="stats">
+                <span id="completed">0</span> Completed | <span id="incomplete">0</span> Incomplete
+            </div>
+        </div>
+        <div class="add-task">
+            <input type="text" id="task" placeholder="Enter task">
+            <input type="text" id="time" placeholder="Expected time (m/h)">
+            <button id="add-btn">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+        <h6>by osama mohamed</h6>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
